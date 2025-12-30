@@ -33,9 +33,7 @@ section {
   height: 100px;
 }
 
-.bg-nav {
-  background-color: #f3ebebd0;
-}
+
     
 .web-bg{
   background-color: #cdafecd3;
@@ -55,11 +53,15 @@ section {
 
 
 .navbar {
-  height: 60px;
   width: 70%;
+  height: 60px;
+  background-color: #f3ebebd0;
   top: 80px;
   transition: all 0.3s ease;
+  transform: translateX(-50%);
   margin-top: 1rem;
+  padding: 0 !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 #home {
@@ -92,27 +94,55 @@ section {
   border: 4px solid #bb78feff;
   
 }
-
+.icon-item {
+  display: flex;
+  justify-content: start;
+  
+}
 /* Mobile */
 @media (max-width: 576px) {
   .navbar {
-    height: auto;              /* allow hamburger expansion */
-    width: 50%;               /* full width */
-    top: 60px;
-    padding: 0.2rem 0.2rem;
-    border-radius: 1.5rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    width: 30% !important;
+    height: auto;
+    background-color: #f8f9fa;
+    margin-left: 90px !important;
+    margin-right: 10px !important;
+    transition: all 0.3s ease;
+    transform: translateX(0%);
+    box-shadow:  0 0 #f8f9fa !important;
+    padding: 10px !important;
+  }
+  .navbar-collapse {
+      
+    position: fixed;
+    top: 110%;              /* below logo + navbar */
+    right: -9%;
+    
+    width: 98vw;
+    height: 28vh;            /* 🔥 HALF screen */
+    background-color:  #f8f9fa;
+    padding: 10px;
+    
+    
+
+    overflow-y: auto;
   }
    .navbar-toggler {
-    padding: 0.1rem 0.25rem !important; /* override Bootstrap */
+    
+    padding: 10px !important;
     border-radius: 0.5rem;
+   
   }
+  .a-nav{
+        
+        padding: 10px;
+      }
 
   .navbar-toggler-icon {
     width: 0.8rem;
     height: 0.8rem;
     background-size: 0.8rem 0.8rem;
+   
   }
     .img-pic {
     width: 200px;
@@ -145,19 +175,35 @@ section {
   .title-about{
     padding-top: 50px;
   }
+  .icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 /* Tablet */
 @media (max-width: 992px) {
    .navbar {
     height: auto;           /* allow collapse if needed */
-    width: 85%;             /* slightly wider than mobile */
+    width: fit-content;             /* slightly wider than mobile */
     top: 70px;              /* distance from top/logo */
-    padding: 0.3rem 0.5rem;
     border-radius: 1.25rem;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin: 0.25rem;
+    
+    transition: all 0.3s ease;
+    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, 0.15) ;
+    background-color:  #f8f9fa;
+    
+    
   }
+  
+
+ .icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   /* Navbar toggle button */
   .navbar-toggler {
@@ -171,6 +217,7 @@ section {
     height: 1rem;
     background-size: 1rem 1rem;
   }
+  
 
   /* Logo image size */
   .img-size {
