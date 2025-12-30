@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Project</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="image/5366254478988e5dbbeb73dfead43985.jpg"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body
+    data-bs-target=".navbar"
+    data-bs-offset="100"
+    tabindex="0"
+    class="web-bg"
+  >
+    <header>
+      <!-- Top Header / Logo -->
+      <div class="container-fluid bg-light position-fixed top-0 start-0 z-3">
+        <img
+          src="image/5366254478988e5dbbeb73dfead43985.jpg"
+          class="img-size m-3 rounded-circle"
+          alt="Logo"
+        />
+      </div>
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg position-fixed top-0 start-50 mt-3 translate-middle-x w-50 bg-nav rounded-5 shadow z-3"
+      >
+        <div class="container-fluid ">
+          <!-- Toggle button (mobile) -->
+          <button
+            class="navbar-toggler p-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Nav links -->
+          <div
+            class="collapse navbar-collapse justify-content-between p-3"
+            id="mainNavbar"
+          >
+            <a class="nav-link active a-nav px-3" href="#home">Home</a>
+            <a class="nav-link a-nav " href="#about">About</a>
+            <a class="nav-link a-nav px-3" href="#project">Project</a>
+            <a class="nav-link a-nav px-3" href="#skill">Skill</a>
+            <a class="nav-link a-nav px-3" href="#experience">Experience</a>
+            <a class="nav-link a-nav px-3" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- Left side introduction -->
+            <div
+              class="col-lg-6 col-md-12 text-center text-lg-start px-3 py-5 mt-5"
+            >
+              <h1 class="display-3 fw-bold mb-3 mx-5 mt-5">Wassup, I'm Sry</h1>
+              <p class="lead mb-4 mx-5">
+                <span class="fw-bold">A Fullstack developer wannabe,</span>And a
+                passionate web and App developer with a knack for creating
+                stunning and user-friendly websites.
+              </p>
+              <div class="d-flex gap-4 justify-content-start mx-5">
+              <a
+                href="https://github.com/ZyvanSry"
+                style="width: 50px; height: 50px"
+                class="btn btn-light btn-lg rounded-circle d-flex justify-content-center align-items-center "
+                ><i class="fa-brands fa-github-alt"></i></a
+              >
+              <a
+                href="https://t.me/MeyMengsry"
+                style="width: 50px; height: 50px"
+                class="btn btn-light btn-lg rounded-circle d-flex justify-content-center align-items-center "
+                ><i class="fa-brands fa-telegram"></i></a
+              >
+              <a
+                href="https://web.facebook.com/zyvan.3.0"
+                style="width: 50px; height: 50px"
+                class="btn btn-light btn-lg rounded-circle d-flex justify-content-center align-items-center"
+                ><i class="fa-brands fa-facebook"></i></a
+              >
+              </div>
+            </div>
+
+            <!-- Right side image -->
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center py-5 ">
+              <div
+                class="img-frame1 rounded-circle d-flex justify-content-center align-items-center p-3 "
+              >
+                <div
+                  class="img-frame rounded-circle d-flex justify-content-center align-items-center p-3 "
+                >
+                  <img
+                    class="img-pic rounded-circle"
+                    src="image/photo_2025-12-24_20-08-11.jpg"
+                    alt="Jane Doe"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container-fluid bg-tertiary h-100 d-flex flex-column ">
+          <div class="d-flex justify-content-center  text-dark fs-1  title-about">
+            Who am I?
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <div class=" h-100 w-50">
+              <div  class="d-flex justify-content-center align-items-center">
+                <img  class="img-pic" src="/my_ass/image/photo_2025-12-25_00-56-48.jpg" alt="Profile Picture">
+              </div>
+            </div>
+            <div class=" h-100 w-50">
+              <div class="d-flex flex-column justify-content-center h-100 p-5">
+                <p class="fs-5">
+                  Hello! I'm Sry, a passionate web and app developer with a knack for creating stunning and user-friendly websites. With a background in computer science and a love for coding, I specialize in front-end development using HTML, CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you can find me exploring the latest tech trends or working on personal projects to further hone my skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project">Project Section</section>
+      <section id="skill">Skill Section</section>
+      <section id="experience">Experience Section</section>
+      <section id="contact">Contact Section</section>
+    </main>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</html>
