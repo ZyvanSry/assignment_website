@@ -1,8 +1,7 @@
 section {
-  height: 100vh;
-  padding-top: 100px; /* navbar height */
+  min-height: 100vh;      /* allows section to grow */
   scroll-margin-top: 100px;
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -33,8 +32,14 @@ section {
   height: 100px;
 }
 
+#about{
+  min-height: 100vh;
+  padding-top: 100px; /* navbar height */
+  scroll-margin-top: 100px;
+  margin-bottom: 20vh;
+ 
+}
 
-    
 .web-bg{
   background-color: #cdafecd3;
 }
@@ -99,6 +104,91 @@ section {
   justify-content: start;
   
 }
+.abouside{
+  margin-top: 100px;
+  width: 50vw;
+  height: 100vh;
+} 
+
+/* LEFT */
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: #bb78feff;
+  color: #ffffffff;
+  border-radius: 999px;
+  width: fit-content;
+  font-size: 0.9rem;
+}
+
+.about-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about-text-box {
+  max-width: 520px;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,255,255,0.55);
+  border-left: 4px solid #bb78feff;
+  border-radius: 0.75rem;
+}
+
+/* RIGHT CARDS */
+.about-card {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  box-shadow: 0 0.75rem 2rem rgba(0,0,0,0.25);
+  transition: transform 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card i {
+  font-size: 1.4rem;
+  color: #bb78feff;
+  margin-bottom: 0.75rem;
+}
+
+.about-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+
+
+.card-img-top:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+#skillcontainer{
+  
+}
+
+
+
+
+
 /* Mobile */
 @media (max-width: 576px) {
   .navbar {
@@ -169,7 +259,7 @@ section {
     height: 36px;
   }
   #home {
-    padding-top: 200px; /* more space for stacked navbar + logo */
+    padding-top: 50px; /* more space for stacked navbar + logo */
     padding-bottom: 50px;
   }
   .title-about{
@@ -180,6 +270,14 @@ section {
   justify-content: center;
   align-items: center;
 }
+.title-about{
+    padding-top: 50px;
+    margin-top: 80px;
+  }
+  .abouside{
+  margin-top: 100px;
+  width: 0% !important;
+} 
 }
 
 /* Tablet */
@@ -196,6 +294,10 @@ section {
     background-color:  #f8f9fa;
     
     
+  }
+  .title-about{
+    padding-top: 50px;
+    margin-top: 80px;
   }
   
 
