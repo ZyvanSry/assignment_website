@@ -228,3 +228,29 @@ skillContainer.innerHTML = fullstackSkills
           </div>`
   )
   .join("");
+
+
+
+  const form = document.getElementById("contactForm");
+  const result = document.getElementById("result");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page refresh
+
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (email === "" || message === "") {
+      result.textContent = "⚠️ Please fill in all fields.";
+      result.className = "text-warning";
+      return;
+    }
+
+    result.innerHTML = `${email}<br><br> ${message}<br><br>📨 Message sent successfully!`;
+    result.className = "text-dark mt-4 fs-6 p-3 bg-light  rounded-3";
+
+    // clear inputs
+    form.reset();
+  });
+
+

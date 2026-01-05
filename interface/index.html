@@ -189,23 +189,54 @@
         ></div>
       </section>
       <!-- <section id="experience">Experience Section</section> -->
-      <section id="contact" style="scroll-margin-top: 120px; padding-top: 120px; padding-bottom: 50px;">
-        <div class="container-fluid  text-center p-5">
+      <section
+        id="contact"
+        style="
+          scroll-margin-top: 120px;
+          padding-top: 120px;
+          padding-bottom: 50px;
+        "
+      >
+        <div class="container-fluid text-center p-5">
           <div class="d-flex justify-content-center">
             <p class="rounded-5 about-title">Hit me up!</p>
           </div>
+
           <p class="fs-4">
             Message me, don’t be shy at
             <a
               style="color: rgb(255, 255, 255)"
               href="mailto:mengsrymey@gmail.com"
             >
-              <span>mengsrymey@gmail.com</span></a
-            >
+              <span>mengsrymey@gmail.com</span>
+            </a>
             or through the form below.
           </p>
-          <input type="email" class="form-control w-50 mx-auto my-5" placeholder="Your Email" />
-          <textarea style="height: 30vh;" class="w-50 p-3 fs-5 rounded-3 fw-light " name="Message" id="" placeholder="Your Message"></textarea>
+
+          <form id="contactForm">
+            <input
+              id="email"
+              type="email"
+              class="form-control w-50 mx-auto my-4"
+              placeholder="Your Email"
+              required
+            />
+
+            <textarea
+              id="message"
+              style="height: 20vh"
+              class="form-control w-50 mx-auto p-3 fs-5 rounded-3 fw-light"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn btn-light mt-4 px-5 rounded-pill">
+              Send Message
+            </button>
+          </form>
+
+          <!-- Result shown here -->
+          <div class="container-fluid d-flex justify-content-center"><p id="result" class="mt-4 fs-5 "></p></div>
         </div>
       </section>
     </main>
